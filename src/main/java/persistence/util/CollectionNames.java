@@ -1,7 +1,8 @@
 package persistence.util;
 
 public enum CollectionNames {
-    TEST("test");
+    TEST("test"),
+    HEADLINES("headlines");
 
     // Cannot be null
     private String name;

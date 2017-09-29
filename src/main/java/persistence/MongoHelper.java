@@ -25,7 +25,9 @@ public final class MongoHelper {
         MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
 
         for (DatabaseType databaseType : DatabaseType.values()) {
+            logger.info(String.format("Attempting to make connection to db %s", databaseType.getLabel()));
             DB db = mongoClient.getDB(databaseType.getLabel());
+            logger.info(String.format("Successfully made connection to db %s", databaseType.getLabel()));
 
             Jongo jongo = new Jongo(db);
 
