@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+A simple web crawling robot using Jsoup which grabs all headlines from the BBC homepage
+ */
 public class BBCSpider extends WebCrawler {
 
     private static final String baseURL = "https://www.bbc.co.uk";
@@ -23,6 +26,7 @@ public class BBCSpider extends WebCrawler {
     }
 
     public List<String> getHeadlines() throws IOException {
+        // Append headlines to a ArrayList and return
         List<String> headlines = new ArrayList<String>();
         for (Element elem : this.getTopStoryElements()) {
             headlines.add(elem.text());

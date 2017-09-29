@@ -1,4 +1,5 @@
 import crawler.BBCSpider;
+import models.Headline;
 import org.jongo.MongoCollection;
 import persistence.MongoHelper;
 import persistence.util.CollectionNames;
@@ -10,22 +11,23 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-//        BBCSpider spider = new BBCSpider();
-//        try {
-//            List<String> headlines = spider.getHeadlines();
-//
-//            for (String headline : headlines) {
-//                System.out.println(headline);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        // Create an instance of our BBC headline crawler
+        BBCSpider spider = new BBCSpider();
+        try {
+            // Get the list of headlines
+            List<String> headlines = spider.getHeadlines();
 
-        DatabaseConnection connection = MongoHelper.getDatabase(DatabaseType.LOCAL);
+            Headline headlineObject;
 
-        MongoCollection collection = connection.getCollection(CollectionNames.TEST);
-
-        System.out.println(collection.count());
+            // Save to our MongoDB
+            for (String headline : headlines) {
+                headlineObject = new Headline(spider.getBaseUrl(), headline);
+                // Save to our MongoDB
+                headlineObject.writer().save();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

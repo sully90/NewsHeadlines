@@ -7,14 +7,21 @@ import persistence.util.CollectionNames;
 import persistence.util.ObjectFinder;
 import persistence.util.ObjectWriter;
 
+/*
+A simple data structure to hold our crawled headlines and source website.
+ */
 public class Headline implements WritableObject {
 
+    // Unique ID assigned by Mongo. This also acts as a timestamp, hence we don't store the time when we crawled the site
     private ObjectId _id;
 
+    // The source website
     private String source;
 
+    // The crawled headline
     private String headline;
 
+    // For Jackson
     private Headline() {
 
     }
@@ -24,6 +31,7 @@ public class Headline implements WritableObject {
         this.headline = headline;
     }
 
+    // Getters/Setters
     public String getSource() {
         return source;
     }
