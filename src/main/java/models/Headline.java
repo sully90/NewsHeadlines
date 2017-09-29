@@ -24,10 +24,6 @@ public class Headline implements WritableObject {
         this.headline = headline;
     }
 
-    public ObjectId get_id() {
-        return _id;
-    }
-
     public String getSource() {
         return source;
     }

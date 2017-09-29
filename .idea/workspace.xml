@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8f3871-75a1-4cf7-92d6-20522eb79680" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BBCSpider.iml" afterPath="$PROJECT_DIR$/BBCSpider.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/persistence/MongoHelper.java" afterPath="$PROJECT_DIR$/src/main/java/persistence/MongoHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/persistence/WritableObject.java" afterPath="$PROJECT_DIR$/src/main/java/persistence/WritableObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/persistence/util/CollectionNames.java" afterPath="$PROJECT_DIR$/src/main/java/persistence/util/CollectionNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/Headline.java" afterPath="$PROJECT_DIR$/src/main/java/models/Headline.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Tests.java" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -107,20 +101,18 @@
       <file leaf-file-name="Headline.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Headline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,9 +121,12 @@
       <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/main/java/persistence/util/ObjectFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/WritableObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/util/CollectionNames.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Headline.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
       </list>
     </option>
   </component>
@@ -342,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.testFindHeadline">
+  <component name="RunManager" selected="JUnit.Tests.testWriteHeadline">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="App" />
@@ -385,6 +380,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
       <option name="METHOD_NAME" value="testHeadline" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Tests.testWriteHeadline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="BBCSpider" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="testWriteHeadline" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -478,16 +493,18 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Tests.testHeadline" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.Tests.testFindHeadline" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Tests.testWriteHeadline" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Tests.testFindHeadline" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Tests.testHeadline" />
-        <item index="2" class="java.lang.String" itemvalue="Application.App" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Tests.testWriteHeadline" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Tests.testFindHeadline" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Tests.testHeadline" />
+        <item index="3" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -511,8 +528,17 @@
     <history-entry file="Tests_testFindHeadline - 2017.09.29 at 23h 31m 32s.xml">
       <configuration name="Tests.testFindHeadline" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Tests_testFindHeadline - 2017.09.29 at 23h 38m 41s.xml">
+      <configuration name="Tests.testFindHeadline" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Tests_testHeadline - 2017.09.29 at 23h 28m 37s.xml">
       <configuration name="Tests.testHeadline" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_testWriteHeadline - 2017.09.29 at 23h 38m 36s.xml">
+      <configuration name="Tests.testWriteHeadline" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_testWriteHeadline - 2017.09.29 at 23h 39m 56s.xml">
+      <configuration name="Tests.testWriteHeadline" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -722,29 +748,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Headline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
