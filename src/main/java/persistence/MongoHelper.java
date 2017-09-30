@@ -33,7 +33,7 @@ public final class MongoHelper {
 
             DatabaseConnection databaseConnection = new DatabaseConnection(jongo);
 
-            connectionMap.put(DatabaseType.LOCAL, databaseConnection);
+            connectionMap.put(databaseType, databaseConnection);
         }
     }
 
